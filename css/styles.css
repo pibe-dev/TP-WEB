@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.relleno-negro{
+    height: 125px;
+    width: 1200px;
+}
+
+.imagen-100x100-ancho {
+    max-width: 100%; /* Asegura que el contenedor se ajuste a la pantalla */
+    margin: auto;
+    padding: 20px;
+}
+
+.imagen-100x100-ancho img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-fondo {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/VitoKid.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imagen-fondo p {
+font-size:xx-large;
+color: white;
+width: 40%;
+float:right;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 8px;
+    border: #99191c 5px solid;
+    font-size: medium;
+}
+
+.paragraph img {
+    max-width: 100%;
+    height:auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    flex-shrink: 0; /*Agregado porque en Firefox el ancho de las imagenes no eran del 50% como en Chrome o Edge*/
+}
+
+.paragraph a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Responsive Design */
+@media(min-width: 768px) {
+    .paragraph {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .paragraph img {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+}
+
+/* Estilo para la galería */
+
+.gallery {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.gallery a {
+    display: flex;
+    width: 275px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 40px; 
+    padding: 2%;
+    margin: 2%; 
+}
+
